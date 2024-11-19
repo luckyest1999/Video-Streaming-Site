@@ -6,16 +6,21 @@ import React, { useState } from 'react';
 
 const App = () => {
   const [activeTab, setActiveTab] = useState('upload');
-
+  const [searchQuery, setSearchQuery] = useState('');
   const handleTabChange = (tab) => {
     setActiveTab(tab);
   };
 
+  const handleSearch = (keyword) => {
+        setSearchQuery(keyword);
+  };
+
   return (
     <div className="app">
-      <NavbarComponent onTabChange={handleTabChange} />
+      <NavbarComponent onTabChange={handleTabChange} onSearch={handleSearch}  />
       <div className="content">
-        {activeTab === 'upload' ? <VideoUpload /> : <VideoList />}
+
+        {activeTab === 'upload' ? <VideoUpload /> : <VideoList searchQuery={searchQuery} />}
       </div>
     </div>
   );
