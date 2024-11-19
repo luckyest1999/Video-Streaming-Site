@@ -1,0 +1,27 @@
+// MovieList.scss
+@import '../../styles/variables';
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: $space-md;
+  margin-top: $space-lg;
+  padding: $space-md;
+}
+.movie-list__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: $breakpoint-md) {
+  .movie-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .movie-list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,30 @@
+// _grid.scss
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+@include tablet {
+  .col {
+    width: 50%;
+  }
+}
+
+@include mobile {
+  .col {
+    width: 100%;
+  }
+}

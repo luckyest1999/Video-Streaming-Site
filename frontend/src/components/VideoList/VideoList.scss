@@ -1,0 +1,30 @@
+.video-list {
+  padding: 20px;
+
+  .carousel-item {
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+.video-card {
+  transition: transform 0.3s;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+.slick-slider {
+  .slick-dots li button:before {
+    color: #007bff;
+  }
+}

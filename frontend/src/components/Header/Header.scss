@@ -1,0 +1,25 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #141414;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.search-bar input {
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 300px;
+}
